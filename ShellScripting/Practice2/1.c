@@ -16,10 +16,10 @@ int main() {
     // Print a message from both parent and child processes
     if (p == 0) {
         // This block is executed by the child process
-        printf("Hello from the child process! Process ID (pid) = %d, Parent ID (ppid) = %d\n", getpid(), getppid());
+        printf("Hello child process! Process ID (pid) = %d, Parent ID (ppid) = %d\n", getpid(), getppid());
     } else {
         // This block is executed by the parent process
-        printf("Hello from the parent process! Process ID (pid) = %d, Child ID = %d\n", getpid(), p);
+        printf("Hello parent process! Process ID (pid) = %d, Child ID = %d\n", getpid(), p);
     }
 
     return 0;
