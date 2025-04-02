@@ -12,6 +12,7 @@ do
 echo $i
 done
 
+echo "MORE"
 for i in {1..10}
 do
 echo $in
